@@ -1,10 +1,11 @@
-print("Vere, la testejo estas lanĉita")
+print("Vere, la testejo estas lanĉita...")
 import telebot
 import discord
 import time
 import os
 from threading import Thread
 from flask import Flask, render_template
+from decouple import config
 
 app = Flask(__name__, template_folder='')
 
@@ -40,8 +41,8 @@ def purigilo():
 def index():
     return render_template("retlisto.html", montrajo=retteksto["content"])
 
-T_TOKEN = os.environ['testaT_TOKEN']
-D_TOKEN = os.environ['D_TOKEN']
+T_TOKEN = config('testat_token')
+D_TOKEN = config('d_token')
 bot = telebot.TeleBot(T_TOKEN)
 
 @bot.message_handler(content_types=['text'])
