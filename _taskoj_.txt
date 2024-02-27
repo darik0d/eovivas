@@ -1,0 +1,15 @@
+- organizi datumbazon (replit datumbazo -> enhava historio -> fonto (ekz jutubo, telegramo) -> pli specifa fonto (NE, r/Esperanto, Libera Folio) -> [dato je sekundoj, tipo (bildo, filmeto, mesaĝo, sciigo, glumarko, artikolo, podkasto)]. Uzu mallongigojn! mesaĝo -> msg, sciigo -> scg)
+db["retbazo"] = {"jutubo": {"Eterna krok": {4688809: "flm"}}}
+- damp ĉiusemajne?
+- aldoni animacion por punktoj
+=> db["mesaĝoj"] = {"110389200": ["fonto", "aga_teksto"]} (...se 'tempo' jam estas, faru 'tempo'+1)
+- blabla - kial ĝi montriĝas? Forigu!
+- fonto de mesaĝoj
+- ne nur tekstaĵoj
+- Anonima sendilo por Nova Esperantujo?
+- pli mojosa aspekto
+- aldoni novajn telegramajn fontojn
+- statistiko 
+- aldoni diskordajn fontojn
+- retfontoj
+- konfirmilo (por administrantoj)

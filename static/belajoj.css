@@ -1,0 +1,139 @@
+.tabelo {
+	 max-width: 490px;
+	 width: 100%;
+	 height:100%;
+	 overflow-y: auto;
+	 overflow-x:hidden;
+	 border-radius: 12px;
+	 border-top-left-radius: 0px;
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, .4);
+}
+.pulso{
+	height: 50px;
+	fill: #fff;
+	opacity: 1;
+	position: absolute;
+	bottom: -20%;
+}
+#pulso1{
+	left: var(--start);
+	transform: translate(75%, -50%);
+}
+#pulso2{
+	left: var(--start);
+	transform: translate(0%, -50%);
+}
+#pulso3{
+	left: var(--start);
+	transform: translate(-75%, -50%);
+}
+#pulso4{
+	left: var(--start);
+	transform: translate(150%, -50%);
+}
+
+header{
+	 --start: 15%;
+	 height: 130px;
+	 width: 490px;
+	 background-image: repeating-radial-gradient(circle at var(--start), transparent 0%, transparent 7%, rgba(32, 160, 45, .33) 7%, rgba(32, 160, 45, .33) 15%), linear-gradient(to right, #30d446, #20a02d);
+	 color: #fff;
+	 margin-left: auto;
+	 margin-right:auto;
+	 margin-top:0;
+   margin-bottom:0;
+	 position: relative;
+	 border-radius: 12px 12px 0 0;
+	 overflow: hidden;
+}
+ header .lastaj_agoj_titolo {
+	 position: absolute;
+	 z-index: 2;
+	 top: 50%;
+	 right: calc(var(--start) * .75);
+	 transform: translateY(-50%);
+	 text-transform: uppercase;
+	 margin: 0;
+}
+ header .lastaj_agoj_titolo span {
+	 display: block;
+}
+ header .lastaj_agoj_superteksto {
+	 font-size: 24px;
+	 font-weight: 700;
+	 letter-spacing: 6.5px;
+}
+ header .lastaj_agoj_subteksto {
+	 font-size: 13px;
+	 font-weight: 500;
+	 letter-spacing: 3.55px;
+	 opacity: 0.65;
+	 transform: translateY(-2px);
+}
+ header .stelo {
+	 fill: #fff;
+	 opacity: 0.85;
+	 width: 50px;
+	 position: absolute;
+	 top: 50%;
+	 left: var(--start);
+	 transform: translate(-50%, -50%);
+}
+ .lastaj_agoj {
+	 background-color: #fff;
+	 border-radius: 0 0 12px 12px;
+	 padding: 15px 15px 20px;
+	 display: grid;
+   flex-direction: column;
+	 row-gap: 8px;
+}
+ .lasta_ago {
+	 display: grid;
+   flex-direction: column;
+	 grid-template-columns: 1fr 3fr 1fr;
+	 align-items: center;
+	 padding: 10px 30px 10px 10px;
+	 overflow: hidden;
+	 border-radius: 10px;
+	 box-shadow: 0 5px 7px -1px rgba(51, 51, 51, 0.23);
+	 cursor: pointer;
+	 transition: transform 0.1s cubic-bezier(0.7, 0.98, 0.86, 0.98), box-shadow 0.1s cubic-bezier(0.7, 0.98, 0.86, 0.98);
+	 background-color: #fff;
+}
+ .lasta_ago:hover {
+	 transform: scale(1.05);
+	 box-shadow: 0 9px 47px 11px rgba(51, 51, 51, 0.18);
+}
+ .aga_bildo {
+	 max-width: 100%;
+	 width: 60px;
+	 border-radius: 50%;
+	 box-shadow: 0 0 0 10px #ebeef3, 0 0 0 22px #f3f4f6;
+}
+ .aga_teksto {
+	 color: #979cb0;
+	 font-weight: 600;
+	 font-size: 20px;
+	 letter-spacing: 0.64px;
+	 margin-left: 12px;
+}
+ .tempo {
+	 color: #35d8ac;
+	 font-weight: 700;
+	 font-size: 34px;
+	 text-align: right;
+}
+ .tempo > span {
+	 opacity: 0.8;
+	 font-weight: 600;
+	 font-size: 13px;
+	 margin-left: 3px;
+}
+ body {
+	 margin: 0;
+	 background-color: #eaeaea;
+	 display: grid;
+	 height: 100vh;
+	 place-items: center;
+	 font-family: 'Source Sans Pro', sans-serif;
+}
